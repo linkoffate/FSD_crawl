@@ -31,6 +31,6 @@ for p in range(int(max_page_number)):
         audio_urls.append(url)
 
 fname = hierarchy + '.txt'
-with open(fname, 'w') as f:
+with open('urls/' + fname, 'w') as f:
     for url in audio_urls:
         f.write(url + '\n')
